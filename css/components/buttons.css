@@ -1,0 +1,10 @@
+.btn-demo {
+  background-color: rgb(0, 0, 0);
+  border-radius: 999999px;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  height: fit-content;
+  animation: changing-color 5s infinite, spin 2s infinite;
+}

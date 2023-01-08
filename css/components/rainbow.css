@@ -1,0 +1,121 @@
+.btn-demo {
+  background-color: rgb(0, 125, 235);
+  border-radius: 999999px;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  height: fit-content;
+  animation: changing-color 5s infinite, spin 2s infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes changing-color {
+  25% {
+    background-color: red;
+  }
+  50% {
+    background-color: greenyellow;
+  }
+  75% {
+    background-color: orchid;
+  }
+  100% {
+    background-color: tomato;
+  }
+}
+
+.btn-demo:hover {
+  background-color: rgb(0, 212, 240);
+  letter-spacing: 3px;
+  transition: 1s all;
+}
+
+.btn-violet {
+  background-color: rgb(94, 0, 235);
+  border-radius: 999999px;
+  padding: 10px 20px;
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.btn-violet:hover {
+  background-color: blueviolet;
+}
+
+.btn-rectangle {
+  background-color: rgb(0, 0, 0);
+  padding: 10px 20px;
+
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.btn-rectangle:hover {
+  background-color: dimgrey;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: "Oswald", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  background-color: rgb(46, 1, 77);
+  color: white;
+}
+
+/* Mise en page */
+.container {
+  display: flex;
+}
+
+.cards {
+  width: 200px;
+  height: 200px;
+  transform: translateY(300px);
+  /*   transform: translateY(0px); */
+  transition: transform 0.5s ease;
+}
+
+/* couleur de mes cards */
+#card0 {
+  background-color: red;
+}
+
+#card1 {
+  background-color: orange;
+}
+
+#card2 {
+  background-color: yellow;
+}
+
+#card3 {
+  background-color: green;
+}
+
+#card4 {
+  background-color: blue;
+}
+
+/* Etat qui vient écraser le premier lorsque le container obtient la classe active */
+
+.active {
+  transform: translateY(0px);
+}
